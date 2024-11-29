@@ -12,6 +12,12 @@ public class IO {
         return input.nextLine();
     }
 
+    //clear the console window
+    public void clear(){
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
+
     //complicated function to get valid menu inputs from user
     public int getOption(int max, String message){
         Integer response = null;

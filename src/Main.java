@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         //create custom input/output object
         IO io = new IO();
+        io.clear();
         //create custom entity objects for player and enemy
         Entity player;
         Entity enemy;
@@ -29,6 +30,7 @@ public class Main {
 
             //do rounds until enemy dies
             while(enemy.stats[1] > 0 && player.stats[1] > 0){
+                io.clear();
                 Game.doRound(io,player,enemy);
             }
 

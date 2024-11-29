@@ -63,6 +63,7 @@ public class Game {
         int choice;
 
         //displays the stats and menu at the start of each round
+        io.clear();
         displayState(io,player,enemy);
         displayMenu(io);
 
